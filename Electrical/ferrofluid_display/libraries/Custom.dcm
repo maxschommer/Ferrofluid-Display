@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP PDFN33
+D DC Voltmeter
+K Voltmeter DC
+F ~
+$ENDCMP
+#
+#End Doc Library

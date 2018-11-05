@@ -1,0 +1,60 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Custom:Arduino_Nano A?
+U 1 1 5BC2D697
+P 3450 3225
+F 0 "A?" H 3475 4562 60  0000 C CNN
+F 1 "Arduino_Nano" H 3475 4456 60  0000 C CNN
+F 2 "" H 3450 3225 60  0000 C CNN
+F 3 "" H 3450 3225 60  0000 C CNN
+	1    3450 3225
+	1    0    0    -1  
+$EndComp
+$Comp
+L Custom:PDFN33 Q?
+U 1 1 5BC2D724
+P 5125 2850
+F 0 "Q?" H 5330 2896 50  0000 L CNN
+F 1 "PDFN33" H 5330 2805 50  0000 L CNN
+F 2 "" H 5325 2950 50  0001 C CNN
+F 3 "~" H 5125 2850 50  0001 C CNN
+	1    5125 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Custom:PDFN33 Q?
+U 2 1 5BC2D7A5
+P 5925 2850
+F 0 "Q?" H 6130 2896 50  0000 L CNN
+F 1 "PDFN33" H 6130 2805 50  0000 L CNN
+F 2 "" H 6125 2950 50  0001 C CNN
+F 3 "~" H 5925 2850 50  0001 C CNN
+	2    5925 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Custom:CPH5504-TL-E Q?
+U 1 1 5BC30A4A
+P 7250 2050
+F 0 "Q?" H 7691 2096 50  0000 L CNN
+F 1 "CPH5504-TL-E" H 7691 2005 50  0000 L CNN
+F 2 "" H 7200 1975 50  0000 L CIN
+F 3 "" H 7000 2050 50  0001 L CNN
+	1    7250 2050
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
