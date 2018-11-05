@@ -61,7 +61,7 @@ end
     p.FaceColor = 'red';
     p.EdgeColor = 'none';
 %     daspect([1 1 1])
-    view(3); 
+    view(3);
     legend("1e-4 Wb Isosurface")
     xlabel("Core Length (m)")
     ylabel("Core Diameter (m)")
