@@ -1,7 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
+EESchema Schematic File Version 4
 LIBS:ferrofluid_display-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -1188,13 +1187,13 @@ F 3 "" H 8825 1450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8825 1125 8825 1450
+	8825 1125 8825 1225
 Wire Wire Line
 	8825 1125 8900 1125
 Wire Wire Line
-	8600 1025 8900 1025
+	8600 1025 8825 1025
 Wire Wire Line
-	8825 750  8825 1025
+	8825 750  8825 825 
 Wire Wire Line
 	8900 1225 8825 1225
 Connection ~ 8825 1225
@@ -1245,7 +1244,7 @@ F 3 "" H 6675 2325 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6675 2225 6675 2325
+	6675 2225 6675 2275
 $Comp
 L power:+3V3 #PWR06
 U 1 1 5BF68B47
@@ -1258,7 +1257,7 @@ F 3 "" H 6775 2425 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6775 2225 6775 2425
+	6775 2225 6775 2375
 NoConn ~ 7875 875 
 NoConn ~ 7975 875 
 NoConn ~ 8075 875 
@@ -1580,4 +1579,18 @@ NoConn ~ 7475 875
 NoConn ~ 7575 875 
 NoConn ~ 7675 875 
 NoConn ~ 7775 875 
+Wire Wire Line
+	8825 1225 8825 1325
+Wire Wire Line
+	8825 925  8825 1025
+Wire Wire Line
+	8825 1325 8825 1450
+Wire Wire Line
+	8825 825  8825 925 
+Wire Wire Line
+	8825 1025 8900 1025
+Wire Wire Line
+	6775 2375 6775 2425
+Wire Wire Line
+	6675 2275 6675 2325
 $EndSCHEMATC
