@@ -3,7 +3,7 @@
   (general
     (thickness 1.6)
     (drawings 0)
-    (tracks 22)
+    (tracks 28)
     (zones 0)
     (modules 627)
     (nets 654)
@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 0.25)
+    (last_trace_width 0.5)
     (user_trace_width 0.5)
     (trace_clearance 0.2)
     (zone_clearance 0.508)
@@ -28923,6 +28923,12 @@
     )
   )
 
+  (via (at 139.7 -8.382) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 5))
+  (segment (start 139.4945 -8.5875) (end 139.7 -8.382) (width 0.5) (layer F.Cu) (net 5))
+  (segment (start 138.156905 -8.5875) (end 139.4945 -8.5875) (width 0.5) (layer F.Cu) (net 5))
+  (via (at 131.064 -9.652) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 5))
+  (segment (start 131.2695 -9.8575) (end 131.064 -9.652) (width 0.5) (layer F.Cu) (net 5))
+  (segment (start 132.756905 -9.8575) (end 131.2695 -9.8575) (width 0.5) (layer F.Cu) (net 5))
   (segment (start 138.386405 -9.628) (end 138.156905 -9.8575) (width 0.5) (layer F.Cu) (net 29))
   (segment (start 141.224 -9.628) (end 138.386405 -9.628) (width 0.5) (layer F.Cu) (net 29))
   (segment (start 138.036904 -10.527501) (end 138.156905 -10.4075) (width 0.25) (layer F.Cu) (net 29))
@@ -28952,12 +28958,12 @@
     (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
     (polygon
       (pts
-        (xy 131.064 -15.748) (xy 131.064 -4.064) (xy 143.256 -4.064) (xy 143.256 -15.748)
+        (xy 130.556 -15.748) (xy 130.556 -4.064) (xy 143.256 -4.064) (xy 143.256 -15.748)
       )
     )
     (filled_polygon
       (pts
-        (xy 143.129 -4.191) (xy 131.191 -4.191) (xy 131.191 -15.621) (xy 143.129 -15.621)
+        (xy 143.129 -4.191) (xy 130.683 -4.191) (xy 130.683 -15.621) (xy 143.129 -15.621)
       )
     )
   )

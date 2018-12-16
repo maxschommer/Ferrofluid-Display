@@ -1,0 +1,1583 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:ferrofluid_display-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 114
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Custom:Arduino_Nano A1001
+U 1 1 5BC2D697
+P 7225 1575
+F 0 "A1001" H 7250 2912 60  0000 C CNN
+F 1 "Arduino_Nano" H 7250 2806 60  0000 C CNN
+F 2 "Modules:Arduino_Nano" H 7225 1575 60  0001 C CNN
+F 3 "" H 7225 1575 60  0000 C CNN
+	1    7225 1575
+	0    -1   -1   0   
+$EndComp
+$Sheet
+S 4400 800  1050 6450
+U 5BEA1723
+F0 "sheet5BEA16DC" 50
+F1 "ShiftRegisters.sch" 50
+F2 "EM_1" O R 5450 900 50 
+F3 "EM_2" O R 5450 1000 50 
+F4 "EM_3" O R 5450 1100 50 
+F5 "EM_4" O R 5450 1200 50 
+F6 "EM_5" O R 5450 1300 50 
+F7 "EM_6" O R 5450 1400 50 
+F8 "EM_7" O R 5450 1500 50 
+F9 "EM_8" O R 5450 1600 50 
+F10 "EM_9" O R 5450 1700 50 
+F11 "EM_10" O R 5450 1800 50 
+F12 "EM_11" O R 5450 1900 50 
+F13 "EM_12" O R 5450 2000 50 
+F14 "EM_13" O R 5450 2100 50 
+F15 "EM_14" O R 5450 2200 50 
+F16 "EM_15" O R 5450 2300 50 
+F17 "EM_16" O R 5450 2400 50 
+F18 "EM_17" O R 5450 2500 50 
+F19 "EM_18" O R 5450 2600 50 
+F20 "EM_19" O R 5450 2700 50 
+F21 "EM_20" O R 5450 2800 50 
+F22 "EM_21" O R 5450 2900 50 
+F23 "EM_22" O R 5450 3000 50 
+F24 "EM_23" O R 5450 3100 50 
+F25 "EM_24" O R 5450 3200 50 
+F26 "EM_25" O R 5450 3300 50 
+F27 "EM_26" O R 5450 3400 50 
+F28 "EM_27" O R 5450 3500 50 
+F29 "EM_28" O R 5450 3600 50 
+F30 "EM_29" O R 5450 3700 50 
+F31 "EM_30" O R 5450 3800 50 
+F32 "EM_31" O R 5450 3900 50 
+F33 "EM_32" O R 5450 4000 50 
+F34 "EM_33" O R 5450 4100 50 
+F35 "EM_34" O R 5450 4200 50 
+F36 "EM_35" O R 5450 4300 50 
+F37 "EM_36" O R 5450 4400 50 
+F38 "EM_37" O R 5450 4500 50 
+F39 "EM_38" O R 5450 4600 50 
+F40 "EM_39" O R 5450 4700 50 
+F41 "EM_40" O R 5450 4800 50 
+F42 "EM_41" O R 5450 4900 50 
+F43 "EM_42" O R 5450 5000 50 
+F44 "EM_43" O R 5450 5100 50 
+F45 "EM_44" O R 5450 5200 50 
+F46 "EM_45" O R 5450 5300 50 
+F47 "EM_46" O R 5450 5400 50 
+F48 "EM_47" O R 5450 5500 50 
+F49 "EM_48" O R 5450 5600 50 
+F50 "EM_49" O R 5450 5700 50 
+F51 "EM_50" O R 5450 5800 50 
+F52 "EM_51" O R 5450 5900 50 
+F53 "EM_52" O R 5450 6000 50 
+F54 "EM_53" O R 5450 6100 50 
+F55 "EM_54" O R 5450 6200 50 
+F56 "EM_55" O R 5450 6300 50 
+F57 "EM_56" O R 5450 6400 50 
+F58 "EM_57" O R 5450 6500 50 
+F59 "EM_58" O R 5450 6600 50 
+F60 "EM_59" O R 5450 6700 50 
+F61 "EM_60" O R 5450 6800 50 
+F62 "EM_61" O R 5450 6900 50 
+F63 "EM_62" O R 5450 7000 50 
+F64 "EM_63" O R 5450 7100 50 
+F65 "EM_64" O R 5450 7200 50 
+F66 "SRCLK" I L 4400 1200 50 
+F67 "SRCLR" I L 4400 1300 50 
+F68 "RCLK" I L 4400 1400 50 
+F69 "SER_IN" I L 4400 1100 50 
+F70 "SER_OUT" I L 4400 1000 50 
+$EndSheet
+Text Label 1000 1100 2    50   ~ 0
+SER
+$Sheet
+S 6350 2575 550  2050
+U 5BEA2420
+F0 "EM_Row" 50
+F1 "EM_Row.sch" 50
+F2 "EM_1_A" O L 6350 2625 50 
+F3 "EM_1_B" O L 6350 2725 50 
+F4 "EM_2_A" O L 6350 2825 50 
+F5 "EM_2_B" O L 6350 2925 50 
+F6 "EM_3_A" O L 6350 3025 50 
+F7 "EM_3_B" O L 6350 3125 50 
+F8 "EM_4_A" O L 6350 3225 50 
+F9 "EM_4_B" O L 6350 3325 50 
+F10 "EM_5_A" O L 6350 3425 50 
+F11 "EM_5_B" O L 6350 3525 50 
+F12 "EM_6_A" O L 6350 3625 50 
+F13 "EM_6_B" O L 6350 3725 50 
+F14 "EM_7_A" O L 6350 3825 50 
+F15 "EM_7_B" O L 6350 3925 50 
+F16 "EM_8_A" O L 6350 4025 50 
+F17 "EM_8_B" O L 6350 4125 50 
+F18 "EM_9_A" O L 6350 4225 50 
+F19 "EM_9_B" O L 6350 4325 50 
+F20 "EM_10_A" O L 6350 4425 50 
+F21 "EM_10_B" O L 6350 4525 50 
+$EndSheet
+$Sheet
+S 7200 2575 550  2050
+U 5BEA7F28
+F0 "sheet5BEA7F12" 50
+F1 "EM_Row.sch" 50
+F2 "EM_1_A" O L 7200 2625 50 
+F3 "EM_1_B" O L 7200 2725 50 
+F4 "EM_2_A" O L 7200 2825 50 
+F5 "EM_2_B" O L 7200 2925 50 
+F6 "EM_3_A" O L 7200 3025 50 
+F7 "EM_3_B" O L 7200 3125 50 
+F8 "EM_4_A" O L 7200 3225 50 
+F9 "EM_4_B" O L 7200 3325 50 
+F10 "EM_5_A" O L 7200 3425 50 
+F11 "EM_5_B" O L 7200 3525 50 
+F12 "EM_6_A" O L 7200 3625 50 
+F13 "EM_6_B" O L 7200 3725 50 
+F14 "EM_7_A" O L 7200 3825 50 
+F15 "EM_7_B" O L 7200 3925 50 
+F16 "EM_8_A" O L 7200 4025 50 
+F17 "EM_8_B" O L 7200 4125 50 
+F18 "EM_9_A" O L 7200 4225 50 
+F19 "EM_9_B" O L 7200 4325 50 
+F20 "EM_10_A" O L 7200 4425 50 
+F21 "EM_10_B" O L 7200 4525 50 
+$EndSheet
+Text Label 2050 900  0    50   ~ 0
+O_1
+Text Label 2050 1000 0    50   ~ 0
+O_2
+Text Label 2050 1100 0    50   ~ 0
+O_3
+Text Label 2050 1200 0    50   ~ 0
+O_4
+Text Label 2050 1300 0    50   ~ 0
+O_5
+Text Label 2050 1400 0    50   ~ 0
+O_6
+Text Label 2050 1500 0    50   ~ 0
+O_7
+Text Label 2050 1600 0    50   ~ 0
+O_8
+Text Label 2050 1700 0    50   ~ 0
+O_9
+Text Label 2050 1800 0    50   ~ 0
+O_10
+Text Label 2050 1900 0    50   ~ 0
+O_11
+Text Label 2050 2000 0    50   ~ 0
+O_12
+Text Label 2050 2100 0    50   ~ 0
+O_13
+Text Label 2050 2200 0    50   ~ 0
+O_14
+Text Label 2050 2300 0    50   ~ 0
+O_15
+Text Label 2050 2400 0    50   ~ 0
+O_16
+Text Label 2050 2500 0    50   ~ 0
+O_17
+Text Label 2050 2600 0    50   ~ 0
+O_18
+Text Label 2050 2700 0    50   ~ 0
+O_19
+Text Label 2050 2800 0    50   ~ 0
+O_20
+Text Label 2050 2900 0    50   ~ 0
+O_21
+Text Label 2050 3000 0    50   ~ 0
+O_22
+Text Label 2050 3100 0    50   ~ 0
+O_23
+Text Label 2050 3200 0    50   ~ 0
+O_24
+Text Label 2050 3300 0    50   ~ 0
+O_25
+Text Label 2050 3400 0    50   ~ 0
+O_26
+Text Label 2050 3500 0    50   ~ 0
+O_27
+Text Label 2050 3600 0    50   ~ 0
+O_28
+Text Label 2050 3700 0    50   ~ 0
+O_29
+Text Label 2050 3800 0    50   ~ 0
+O_30
+Text Label 2050 3900 0    50   ~ 0
+O_31
+Text Label 2050 4000 0    50   ~ 0
+O_32
+Text Label 2050 4100 0    50   ~ 0
+O_33
+Text Label 2050 4200 0    50   ~ 0
+O_34
+Text Label 2050 4300 0    50   ~ 0
+O_35
+Text Label 2050 4400 0    50   ~ 0
+O_36
+Text Label 2050 4500 0    50   ~ 0
+O_37
+Text Label 2050 4600 0    50   ~ 0
+O_38
+Text Label 2050 4700 0    50   ~ 0
+O_39
+Text Label 2050 4800 0    50   ~ 0
+O_40
+Text Label 2050 4900 0    50   ~ 0
+O_41
+Text Label 2050 5000 0    50   ~ 0
+O_42
+Text Label 2050 5100 0    50   ~ 0
+O_43
+Text Label 2050 5200 0    50   ~ 0
+O_44
+Text Label 2050 5300 0    50   ~ 0
+O_45
+Text Label 2050 5400 0    50   ~ 0
+O_46
+Text Label 2050 5500 0    50   ~ 0
+O_47
+Text Label 2050 5600 0    50   ~ 0
+O_48
+Text Label 2050 5700 0    50   ~ 0
+O_49
+Text Label 2050 5800 0    50   ~ 0
+O_50
+Text Label 2050 5900 0    50   ~ 0
+O_51
+Text Label 2050 6000 0    50   ~ 0
+O_52
+Text Label 2050 6100 0    50   ~ 0
+O_53
+Text Label 2050 6200 0    50   ~ 0
+O_54
+Text Label 2050 6300 0    50   ~ 0
+O_55
+Text Label 2050 6400 0    50   ~ 0
+O_56
+Text Label 2050 6500 0    50   ~ 0
+O_57
+Text Label 2050 6600 0    50   ~ 0
+O_58
+Text Label 2050 6700 0    50   ~ 0
+O_59
+Text Label 2050 6800 0    50   ~ 0
+O_60
+Text Label 2050 6900 0    50   ~ 0
+O_61
+Text Label 2050 7000 0    50   ~ 0
+O_62
+Text Label 2050 7100 0    50   ~ 0
+O_63
+Text Label 2050 7200 0    50   ~ 0
+O_64
+Text Label 3750 900  0    50   ~ 0
+O_65
+Text Label 3750 1000 0    50   ~ 0
+O_66
+Text Label 3750 1100 0    50   ~ 0
+O_67
+Text Label 3750 1200 0    50   ~ 0
+O_68
+Text Label 3750 1300 0    50   ~ 0
+O_69
+Text Label 3750 1400 0    50   ~ 0
+O_70
+Text Label 3750 1500 0    50   ~ 0
+O_71
+Text Label 3750 1600 0    50   ~ 0
+O_72
+Text Label 3750 1700 0    50   ~ 0
+O_73
+Text Label 3750 1800 0    50   ~ 0
+O_74
+Text Label 3750 1900 0    50   ~ 0
+O_75
+Text Label 3750 2000 0    50   ~ 0
+O_76
+Text Label 3750 2100 0    50   ~ 0
+O_77
+Text Label 3750 2200 0    50   ~ 0
+O_78
+Text Label 3750 2300 0    50   ~ 0
+O_79
+Text Label 3750 2400 0    50   ~ 0
+O_80
+Text Label 3750 2500 0    50   ~ 0
+O_81
+Text Label 3750 2600 0    50   ~ 0
+O_82
+Text Label 3750 2700 0    50   ~ 0
+O_83
+Text Label 3750 2800 0    50   ~ 0
+O_84
+Text Label 3750 2900 0    50   ~ 0
+O_85
+Text Label 3750 3000 0    50   ~ 0
+O_86
+Text Label 3750 3100 0    50   ~ 0
+O_87
+Text Label 3750 3200 0    50   ~ 0
+O_88
+Text Label 3750 3300 0    50   ~ 0
+O_89
+Text Label 3750 3400 0    50   ~ 0
+O_90
+Text Label 3750 3500 0    50   ~ 0
+O_91
+Text Label 3750 3600 0    50   ~ 0
+O_92
+Text Label 3750 3700 0    50   ~ 0
+O_93
+Text Label 3750 3800 0    50   ~ 0
+O_94
+Text Label 3750 3900 0    50   ~ 0
+O_95
+Text Label 3750 4000 0    50   ~ 0
+O_96
+Text Label 3750 4100 0    50   ~ 0
+O_97
+Text Label 3750 4200 0    50   ~ 0
+O_98
+Text Label 3750 4300 0    50   ~ 0
+O_99
+Text Label 3750 4400 0    50   ~ 0
+O_100
+Text Label 3750 4500 0    50   ~ 0
+O_101
+Text Label 3750 4600 0    50   ~ 0
+O_102
+Text Label 3750 4700 0    50   ~ 0
+O_103
+Text Label 3750 4800 0    50   ~ 0
+O_104
+Text Label 3750 4900 0    50   ~ 0
+O_105
+Text Label 3750 5000 0    50   ~ 0
+O_106
+Text Label 3750 5100 0    50   ~ 0
+O_107
+Text Label 3750 5200 0    50   ~ 0
+O_108
+Text Label 3750 5300 0    50   ~ 0
+O_109
+Text Label 3750 5400 0    50   ~ 0
+O_110
+Text Label 3750 5500 0    50   ~ 0
+O_111
+Text Label 3750 5600 0    50   ~ 0
+O_112
+Text Label 3750 5700 0    50   ~ 0
+O_113
+Text Label 3750 5800 0    50   ~ 0
+O_114
+Text Label 3750 5900 0    50   ~ 0
+O_115
+Text Label 3750 6000 0    50   ~ 0
+O_116
+Text Label 3750 6100 0    50   ~ 0
+O_117
+Text Label 3750 6200 0    50   ~ 0
+O_118
+Text Label 3750 6300 0    50   ~ 0
+O_119
+Text Label 3750 6400 0    50   ~ 0
+O_120
+Text Label 3750 6500 0    50   ~ 0
+O_121
+Text Label 3750 6600 0    50   ~ 0
+O_122
+Text Label 3750 6700 0    50   ~ 0
+O_123
+Text Label 3750 6800 0    50   ~ 0
+O_124
+Text Label 3750 6900 0    50   ~ 0
+O_125
+Text Label 3750 7000 0    50   ~ 0
+O_126
+Text Label 3750 7100 0    50   ~ 0
+O_127
+Text Label 3750 7200 0    50   ~ 0
+O_128
+Text Label 5450 900  0    50   ~ 0
+O_129
+Text Label 5450 1000 0    50   ~ 0
+O_130
+Text Label 5450 1100 0    50   ~ 0
+O_131
+Text Label 5450 1200 0    50   ~ 0
+O_132
+Text Label 5450 1300 0    50   ~ 0
+O_133
+Text Label 5450 1400 0    50   ~ 0
+O_134
+Text Label 5450 1500 0    50   ~ 0
+O_135
+Text Label 5450 1600 0    50   ~ 0
+O_136
+Text Label 5450 1700 0    50   ~ 0
+O_137
+Text Label 5450 1800 0    50   ~ 0
+O_138
+Text Label 5450 1900 0    50   ~ 0
+O_139
+Text Label 5450 2000 0    50   ~ 0
+O_140
+Text Label 5450 2100 0    50   ~ 0
+O_141
+Text Label 5450 2200 0    50   ~ 0
+O_142
+Text Label 5450 2300 0    50   ~ 0
+O_143
+Text Label 5450 2400 0    50   ~ 0
+O_144
+Text Label 5450 2500 0    50   ~ 0
+O_145
+Text Label 5450 2600 0    50   ~ 0
+O_146
+Text Label 5450 2700 0    50   ~ 0
+O_147
+Text Label 5450 2800 0    50   ~ 0
+O_148
+Text Label 5450 2900 0    50   ~ 0
+O_149
+Text Label 5450 3000 0    50   ~ 0
+O_150
+Text Label 5450 3100 0    50   ~ 0
+O_151
+Text Label 5450 3200 0    50   ~ 0
+O_152
+Text Label 5450 3300 0    50   ~ 0
+O_153
+Text Label 5450 3400 0    50   ~ 0
+O_154
+Text Label 5450 3500 0    50   ~ 0
+O_155
+Text Label 5450 3600 0    50   ~ 0
+O_156
+Text Label 5450 3700 0    50   ~ 0
+O_157
+Text Label 5450 3800 0    50   ~ 0
+O_158
+Text Label 5450 3900 0    50   ~ 0
+O_159
+Text Label 5450 4000 0    50   ~ 0
+O_160
+Text Label 5450 4100 0    50   ~ 0
+O_161
+Text Label 5450 4200 0    50   ~ 0
+O_162
+Text Label 5450 4300 0    50   ~ 0
+O_163
+Text Label 5450 4400 0    50   ~ 0
+O_164
+Text Label 5450 4500 0    50   ~ 0
+O_165
+Text Label 5450 4600 0    50   ~ 0
+O_166
+Text Label 5450 4700 0    50   ~ 0
+O_167
+Text Label 5450 4800 0    50   ~ 0
+O_168
+Text Label 5450 4900 0    50   ~ 0
+O_169
+Text Label 5450 5000 0    50   ~ 0
+O_170
+Text Label 5450 5100 0    50   ~ 0
+O_171
+Text Label 5450 5200 0    50   ~ 0
+O_172
+Text Label 5450 5300 0    50   ~ 0
+O_173
+Text Label 5450 5400 0    50   ~ 0
+O_174
+Text Label 5450 5500 0    50   ~ 0
+O_175
+Text Label 5450 5600 0    50   ~ 0
+O_176
+Text Label 5450 5700 0    50   ~ 0
+O_177
+Text Label 5450 5800 0    50   ~ 0
+O_178
+Text Label 5450 5900 0    50   ~ 0
+O_179
+Text Label 5450 6000 0    50   ~ 0
+O_180
+Text Label 5450 6100 0    50   ~ 0
+O_181
+Text Label 5450 6200 0    50   ~ 0
+O_182
+Text Label 5450 6300 0    50   ~ 0
+O_183
+Text Label 5450 6400 0    50   ~ 0
+O_184
+Text Label 5450 6500 0    50   ~ 0
+O_185
+Text Label 5450 6600 0    50   ~ 0
+O_186
+Text Label 5450 6700 0    50   ~ 0
+O_187
+Text Label 5450 6800 0    50   ~ 0
+O_188
+Text Label 5450 6900 0    50   ~ 0
+O_189
+Text Label 5450 7000 0    50   ~ 0
+O_190
+Text Label 5450 7100 0    50   ~ 0
+O_191
+Text Label 5450 7200 0    50   ~ 0
+O_192
+$Comp
+L power:GND #PWR01
+U 1 1 5BEA829C
+P 8225 2325
+F 0 "#PWR01" H 8225 2075 50  0001 C CNN
+F 1 "GND" H 8230 2152 50  0000 C CNN
+F 2 "" H 8225 2325 50  0001 C CNN
+F 3 "" H 8225 2325 50  0001 C CNN
+	1    8225 2325
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8225 2225 8225 2325
+Wire Wire Line
+	8125 2225 8125 2325
+Wire Wire Line
+	8125 2325 8225 2325
+Connection ~ 8225 2325
+$Sheet
+S 8125 2575 550  2050
+U 5BF63EE4
+F0 "sheet5BF63ECD" 50
+F1 "EM_Row.sch" 50
+F2 "EM_1_A" O L 8125 2625 50 
+F3 "EM_1_B" O L 8125 2725 50 
+F4 "EM_2_A" O L 8125 2825 50 
+F5 "EM_2_B" O L 8125 2925 50 
+F6 "EM_3_A" O L 8125 3025 50 
+F7 "EM_3_B" O L 8125 3125 50 
+F8 "EM_4_A" O L 8125 3225 50 
+F9 "EM_4_B" O L 8125 3325 50 
+F10 "EM_5_A" O L 8125 3425 50 
+F11 "EM_5_B" O L 8125 3525 50 
+F12 "EM_6_A" O L 8125 3625 50 
+F13 "EM_6_B" O L 8125 3725 50 
+F14 "EM_7_A" O L 8125 3825 50 
+F15 "EM_7_B" O L 8125 3925 50 
+F16 "EM_8_A" O L 8125 4025 50 
+F17 "EM_8_B" O L 8125 4125 50 
+F18 "EM_9_A" O L 8125 4225 50 
+F19 "EM_9_B" O L 8125 4325 50 
+F20 "EM_10_A" O L 8125 4425 50 
+F21 "EM_10_B" O L 8125 4525 50 
+$EndSheet
+$Sheet
+S 8975 2575 550  2050
+U 5BF63EFA
+F0 "sheet5BF63ECE" 50
+F1 "EM_Row.sch" 50
+F2 "EM_1_A" O L 8975 2625 50 
+F3 "EM_1_B" O L 8975 2725 50 
+F4 "EM_2_A" O L 8975 2825 50 
+F5 "EM_2_B" O L 8975 2925 50 
+F6 "EM_3_A" O L 8975 3025 50 
+F7 "EM_3_B" O L 8975 3125 50 
+F8 "EM_4_A" O L 8975 3225 50 
+F9 "EM_4_B" O L 8975 3325 50 
+F10 "EM_5_A" O L 8975 3425 50 
+F11 "EM_5_B" O L 8975 3525 50 
+F12 "EM_6_A" O L 8975 3625 50 
+F13 "EM_6_B" O L 8975 3725 50 
+F14 "EM_7_A" O L 8975 3825 50 
+F15 "EM_7_B" O L 8975 3925 50 
+F16 "EM_8_A" O L 8975 4025 50 
+F17 "EM_8_B" O L 8975 4125 50 
+F18 "EM_9_A" O L 8975 4225 50 
+F19 "EM_9_B" O L 8975 4325 50 
+F20 "EM_10_A" O L 8975 4425 50 
+F21 "EM_10_B" O L 8975 4525 50 
+$EndSheet
+$Sheet
+S 9850 2575 550  2050
+U 5BF63F5C
+F0 "sheet5BF63F5C" 50
+F1 "EM_Row.sch" 50
+F2 "EM_1_A" O L 9850 2625 50 
+F3 "EM_1_B" O L 9850 2725 50 
+F4 "EM_2_A" O L 9850 2825 50 
+F5 "EM_2_B" O L 9850 2925 50 
+F6 "EM_3_A" O L 9850 3025 50 
+F7 "EM_3_B" O L 9850 3125 50 
+F8 "EM_4_A" O L 9850 3225 50 
+F9 "EM_4_B" O L 9850 3325 50 
+F10 "EM_5_A" O L 9850 3425 50 
+F11 "EM_5_B" O L 9850 3525 50 
+F12 "EM_6_A" O L 9850 3625 50 
+F13 "EM_6_B" O L 9850 3725 50 
+F14 "EM_7_A" O L 9850 3825 50 
+F15 "EM_7_B" O L 9850 3925 50 
+F16 "EM_8_A" O L 9850 4025 50 
+F17 "EM_8_B" O L 9850 4125 50 
+F18 "EM_9_A" O L 9850 4225 50 
+F19 "EM_9_B" O L 9850 4325 50 
+F20 "EM_10_A" O L 9850 4425 50 
+F21 "EM_10_B" O L 9850 4525 50 
+$EndSheet
+$Sheet
+S 6350 4900 550  2050
+U 5BF63F7A
+F0 "sheet5BF63F7A" 50
+F1 "EM_Row.sch" 50
+F2 "EM_1_A" O L 6350 4950 50 
+F3 "EM_1_B" O L 6350 5050 50 
+F4 "EM_2_A" O L 6350 5150 50 
+F5 "EM_2_B" O L 6350 5250 50 
+F6 "EM_3_A" O L 6350 5350 50 
+F7 "EM_3_B" O L 6350 5450 50 
+F8 "EM_4_A" O L 6350 5550 50 
+F9 "EM_4_B" O L 6350 5650 50 
+F10 "EM_5_A" O L 6350 5750 50 
+F11 "EM_5_B" O L 6350 5850 50 
+F12 "EM_6_A" O L 6350 5950 50 
+F13 "EM_6_B" O L 6350 6050 50 
+F14 "EM_7_A" O L 6350 6150 50 
+F15 "EM_7_B" O L 6350 6250 50 
+F16 "EM_8_A" O L 6350 6350 50 
+F17 "EM_8_B" O L 6350 6450 50 
+F18 "EM_9_A" O L 6350 6550 50 
+F19 "EM_9_B" O L 6350 6650 50 
+F20 "EM_10_A" O L 6350 6750 50 
+F21 "EM_10_B" O L 6350 6850 50 
+$EndSheet
+$Sheet
+S 7200 4900 550  2050
+U 5BF63F90
+F0 "sheet5BF63F90" 50
+F1 "EM_Row.sch" 50
+F2 "EM_1_A" O L 7200 4950 50 
+F3 "EM_1_B" O L 7200 5050 50 
+F4 "EM_2_A" O L 7200 5150 50 
+F5 "EM_2_B" O L 7200 5250 50 
+F6 "EM_3_A" O L 7200 5350 50 
+F7 "EM_3_B" O L 7200 5450 50 
+F8 "EM_4_A" O L 7200 5550 50 
+F9 "EM_4_B" O L 7200 5650 50 
+F10 "EM_5_A" O L 7200 5750 50 
+F11 "EM_5_B" O L 7200 5850 50 
+F12 "EM_6_A" O L 7200 5950 50 
+F13 "EM_6_B" O L 7200 6050 50 
+F14 "EM_7_A" O L 7200 6150 50 
+F15 "EM_7_B" O L 7200 6250 50 
+F16 "EM_8_A" O L 7200 6350 50 
+F17 "EM_8_B" O L 7200 6450 50 
+F18 "EM_9_A" O L 7200 6550 50 
+F19 "EM_9_B" O L 7200 6650 50 
+F20 "EM_10_A" O L 7200 6750 50 
+F21 "EM_10_B" O L 7200 6850 50 
+$EndSheet
+$Sheet
+S 8125 4900 550  2050
+U 5BF63FA6
+F0 "sheet5BF63FA6" 50
+F1 "EM_Row.sch" 50
+F2 "EM_1_A" O L 8125 4950 50 
+F3 "EM_1_B" O L 8125 5050 50 
+F4 "EM_2_A" O L 8125 5150 50 
+F5 "EM_2_B" O L 8125 5250 50 
+F6 "EM_3_A" O L 8125 5350 50 
+F7 "EM_3_B" O L 8125 5450 50 
+F8 "EM_4_A" O L 8125 5550 50 
+F9 "EM_4_B" O L 8125 5650 50 
+F10 "EM_5_A" O L 8125 5750 50 
+F11 "EM_5_B" O L 8125 5850 50 
+F12 "EM_6_A" O L 8125 5950 50 
+F13 "EM_6_B" O L 8125 6050 50 
+F14 "EM_7_A" O L 8125 6150 50 
+F15 "EM_7_B" O L 8125 6250 50 
+F16 "EM_8_A" O L 8125 6350 50 
+F17 "EM_8_B" O L 8125 6450 50 
+F18 "EM_9_A" O L 8125 6550 50 
+F19 "EM_9_B" O L 8125 6650 50 
+F20 "EM_10_A" O L 8125 6750 50 
+F21 "EM_10_B" O L 8125 6850 50 
+$EndSheet
+$Sheet
+S 8975 4900 550  2050
+U 5BF63FBC
+F0 "sheet5BF63FBC" 50
+F1 "EM_Row.sch" 50
+F2 "EM_1_A" O L 8975 4950 50 
+F3 "EM_1_B" O L 8975 5050 50 
+F4 "EM_2_A" O L 8975 5150 50 
+F5 "EM_2_B" O L 8975 5250 50 
+F6 "EM_3_A" O L 8975 5350 50 
+F7 "EM_3_B" O L 8975 5450 50 
+F8 "EM_4_A" O L 8975 5550 50 
+F9 "EM_4_B" O L 8975 5650 50 
+F10 "EM_5_A" O L 8975 5750 50 
+F11 "EM_5_B" O L 8975 5850 50 
+F12 "EM_6_A" O L 8975 5950 50 
+F13 "EM_6_B" O L 8975 6050 50 
+F14 "EM_7_A" O L 8975 6150 50 
+F15 "EM_7_B" O L 8975 6250 50 
+F16 "EM_8_A" O L 8975 6350 50 
+F17 "EM_8_B" O L 8975 6450 50 
+F18 "EM_9_A" O L 8975 6550 50 
+F19 "EM_9_B" O L 8975 6650 50 
+F20 "EM_10_A" O L 8975 6750 50 
+F21 "EM_10_B" O L 8975 6850 50 
+$EndSheet
+$Sheet
+S 9850 4900 550  2050
+U 5BF63FD2
+F0 "sheet5BF63FD2" 50
+F1 "EM_Row.sch" 50
+F2 "EM_1_A" O L 9850 4950 50 
+F3 "EM_1_B" O L 9850 5050 50 
+F4 "EM_2_A" O L 9850 5150 50 
+F5 "EM_2_B" O L 9850 5250 50 
+F6 "EM_3_A" O L 9850 5350 50 
+F7 "EM_3_B" O L 9850 5450 50 
+F8 "EM_4_A" O L 9850 5550 50 
+F9 "EM_4_B" O L 9850 5650 50 
+F10 "EM_5_A" O L 9850 5750 50 
+F11 "EM_5_B" O L 9850 5850 50 
+F12 "EM_6_A" O L 9850 5950 50 
+F13 "EM_6_B" O L 9850 6050 50 
+F14 "EM_7_A" O L 9850 6150 50 
+F15 "EM_7_B" O L 9850 6250 50 
+F16 "EM_8_A" O L 9850 6350 50 
+F17 "EM_8_B" O L 9850 6450 50 
+F18 "EM_9_A" O L 9850 6550 50 
+F19 "EM_9_B" O L 9850 6650 50 
+F20 "EM_10_A" O L 9850 6750 50 
+F21 "EM_10_B" O L 9850 6850 50 
+$EndSheet
+Text Label 6350 2625 2    50   ~ 0
+O_1
+Text Label 6350 2725 2    50   ~ 0
+O_2
+Text Label 6350 2825 2    50   ~ 0
+O_3
+Text Label 6350 2925 2    50   ~ 0
+O_4
+Text Label 6350 3025 2    50   ~ 0
+O_5
+Text Label 6350 3125 2    50   ~ 0
+O_6
+Text Label 6350 3225 2    50   ~ 0
+O_7
+Text Label 6350 3325 2    50   ~ 0
+O_8
+Text Label 6350 3425 2    50   ~ 0
+O_9
+Text Label 6350 3525 2    50   ~ 0
+O_10
+Text Label 6350 3625 2    50   ~ 0
+O_11
+Text Label 6350 3725 2    50   ~ 0
+O_12
+Text Label 6350 3825 2    50   ~ 0
+O_13
+Text Label 6350 3925 2    50   ~ 0
+O_14
+Text Label 6350 4025 2    50   ~ 0
+O_15
+Text Label 6350 4125 2    50   ~ 0
+O_16
+Text Label 6350 4225 2    50   ~ 0
+O_17
+Text Label 6350 4325 2    50   ~ 0
+O_18
+Text Label 6350 4425 2    50   ~ 0
+O_19
+Text Label 6350 4525 2    50   ~ 0
+O_20
+Text Label 6350 4950 2    50   ~ 0
+O_21
+Text Label 6350 5050 2    50   ~ 0
+O_22
+Text Label 6350 5150 2    50   ~ 0
+O_23
+Text Label 6350 5250 2    50   ~ 0
+O_24
+Text Label 6350 5350 2    50   ~ 0
+O_25
+Text Label 6350 5450 2    50   ~ 0
+O_26
+Text Label 6350 5550 2    50   ~ 0
+O_27
+Text Label 6350 5650 2    50   ~ 0
+O_28
+Text Label 6350 5750 2    50   ~ 0
+O_29
+Text Label 6350 5850 2    50   ~ 0
+O_30
+Text Label 6350 5950 2    50   ~ 0
+O_31
+Text Label 6350 6050 2    50   ~ 0
+O_32
+Text Label 6350 6150 2    50   ~ 0
+O_33
+Text Label 6350 6250 2    50   ~ 0
+O_34
+Text Label 6350 6350 2    50   ~ 0
+O_35
+Text Label 6350 6450 2    50   ~ 0
+O_36
+Text Label 6350 6550 2    50   ~ 0
+O_37
+Text Label 6350 6650 2    50   ~ 0
+O_38
+Text Label 6350 6750 2    50   ~ 0
+O_39
+Text Label 6350 6850 2    50   ~ 0
+O_40
+Text Label 7200 2625 2    50   ~ 0
+O_41
+Text Label 7200 2725 2    50   ~ 0
+O_42
+Text Label 7200 2825 2    50   ~ 0
+O_43
+Text Label 7200 2925 2    50   ~ 0
+O_44
+Text Label 7200 3025 2    50   ~ 0
+O_45
+Text Label 7200 3125 2    50   ~ 0
+O_46
+Text Label 7200 3225 2    50   ~ 0
+O_47
+Text Label 7200 3325 2    50   ~ 0
+O_48
+Text Label 7200 3425 2    50   ~ 0
+O_49
+Text Label 7200 3525 2    50   ~ 0
+O_50
+Text Label 7200 3625 2    50   ~ 0
+O_51
+Text Label 7200 3725 2    50   ~ 0
+O_52
+Text Label 7200 3825 2    50   ~ 0
+O_53
+Text Label 7200 3925 2    50   ~ 0
+O_54
+Text Label 7200 4025 2    50   ~ 0
+O_55
+Text Label 7200 4125 2    50   ~ 0
+O_56
+Text Label 7200 4225 2    50   ~ 0
+O_57
+Text Label 7200 4325 2    50   ~ 0
+O_58
+Text Label 7200 4425 2    50   ~ 0
+O_59
+Text Label 7200 4525 2    50   ~ 0
+O_60
+Text Label 7200 4950 2    50   ~ 0
+O_61
+Text Label 7200 5050 2    50   ~ 0
+O_62
+Text Label 7200 5150 2    50   ~ 0
+O_63
+Text Label 7200 5250 2    50   ~ 0
+O_64
+Text Label 7200 5350 2    50   ~ 0
+O_65
+Text Label 7200 5450 2    50   ~ 0
+O_66
+Text Label 7200 5550 2    50   ~ 0
+O_67
+Text Label 7200 5650 2    50   ~ 0
+O_68
+Text Label 7200 5750 2    50   ~ 0
+O_69
+Text Label 7200 5850 2    50   ~ 0
+O_70
+Text Label 7200 5950 2    50   ~ 0
+O_71
+Text Label 7200 6050 2    50   ~ 0
+O_72
+Text Label 7200 6150 2    50   ~ 0
+O_73
+Text Label 7200 6250 2    50   ~ 0
+O_74
+Text Label 7200 6350 2    50   ~ 0
+O_75
+Text Label 7200 6450 2    50   ~ 0
+O_76
+Text Label 7200 6550 2    50   ~ 0
+O_77
+Text Label 7200 6650 2    50   ~ 0
+O_78
+Text Label 7200 6750 2    50   ~ 0
+O_79
+Text Label 7200 6850 2    50   ~ 0
+O_80
+Text Label 8125 2625 2    50   ~ 0
+O_81
+Text Label 8125 2725 2    50   ~ 0
+O_82
+Text Label 8125 2825 2    50   ~ 0
+O_83
+Text Label 8125 2925 2    50   ~ 0
+O_84
+Text Label 8125 3025 2    50   ~ 0
+O_85
+Text Label 8125 3125 2    50   ~ 0
+O_86
+Text Label 8125 3225 2    50   ~ 0
+O_87
+Text Label 8125 3325 2    50   ~ 0
+O_88
+Text Label 8125 3425 2    50   ~ 0
+O_89
+Text Label 8125 3525 2    50   ~ 0
+O_90
+Text Label 8125 3625 2    50   ~ 0
+O_91
+Text Label 8125 3725 2    50   ~ 0
+O_92
+Text Label 8125 3825 2    50   ~ 0
+O_93
+Text Label 8125 3925 2    50   ~ 0
+O_94
+Text Label 8125 4025 2    50   ~ 0
+O_95
+Text Label 8125 4125 2    50   ~ 0
+O_96
+Text Label 8125 4225 2    50   ~ 0
+O_97
+Text Label 8125 4325 2    50   ~ 0
+O_98
+Text Label 8125 4425 2    50   ~ 0
+O_99
+Text Label 8125 4525 2    50   ~ 0
+O_100
+Text Label 8125 4950 2    50   ~ 0
+O_101
+Text Label 8125 5050 2    50   ~ 0
+O_102
+Text Label 8125 5150 2    50   ~ 0
+O_103
+Text Label 8125 5250 2    50   ~ 0
+O_104
+Text Label 8125 5350 2    50   ~ 0
+O_105
+Text Label 8125 5450 2    50   ~ 0
+O_106
+Text Label 8125 5550 2    50   ~ 0
+O_107
+Text Label 8125 5650 2    50   ~ 0
+O_108
+Text Label 8125 5750 2    50   ~ 0
+O_109
+Text Label 8125 5850 2    50   ~ 0
+O_110
+Text Label 8125 5950 2    50   ~ 0
+O_111
+Text Label 8125 6050 2    50   ~ 0
+O_112
+Text Label 8125 6150 2    50   ~ 0
+O_113
+Text Label 8125 6250 2    50   ~ 0
+O_114
+Text Label 8125 6350 2    50   ~ 0
+O_115
+Text Label 8125 6450 2    50   ~ 0
+O_116
+Text Label 8125 6550 2    50   ~ 0
+O_117
+Text Label 8125 6650 2    50   ~ 0
+O_118
+Text Label 8125 6750 2    50   ~ 0
+O_119
+Text Label 8125 6850 2    50   ~ 0
+O_120
+Text Label 8975 2625 2    50   ~ 0
+O_121
+Text Label 8975 2725 2    50   ~ 0
+O_122
+Text Label 8975 2825 2    50   ~ 0
+O_123
+Text Label 8975 2925 2    50   ~ 0
+O_124
+Text Label 8975 3025 2    50   ~ 0
+O_125
+Text Label 8975 3125 2    50   ~ 0
+O_126
+Text Label 8975 3225 2    50   ~ 0
+O_127
+Text Label 8975 3325 2    50   ~ 0
+O_128
+Text Label 8975 3425 2    50   ~ 0
+O_129
+Text Label 8975 3525 2    50   ~ 0
+O_130
+Text Label 8975 3625 2    50   ~ 0
+O_131
+Text Label 8975 3725 2    50   ~ 0
+O_132
+Text Label 8975 3825 2    50   ~ 0
+O_133
+Text Label 8975 3925 2    50   ~ 0
+O_134
+Text Label 8975 4025 2    50   ~ 0
+O_135
+Text Label 8975 4125 2    50   ~ 0
+O_136
+Text Label 8975 4225 2    50   ~ 0
+O_137
+Text Label 8975 4325 2    50   ~ 0
+O_138
+Text Label 8975 4425 2    50   ~ 0
+O_139
+Text Label 8975 4525 2    50   ~ 0
+O_140
+Text Label 8975 4950 2    50   ~ 0
+O_141
+Text Label 8975 5050 2    50   ~ 0
+O_142
+Text Label 8975 5150 2    50   ~ 0
+O_143
+Text Label 8975 5250 2    50   ~ 0
+O_144
+Text Label 8975 5350 2    50   ~ 0
+O_145
+Text Label 8975 5450 2    50   ~ 0
+O_146
+Text Label 8975 5550 2    50   ~ 0
+O_147
+Text Label 8975 5650 2    50   ~ 0
+O_148
+Text Label 8975 5750 2    50   ~ 0
+O_149
+Text Label 8975 5850 2    50   ~ 0
+O_150
+Text Label 8975 5950 2    50   ~ 0
+O_151
+Text Label 8975 6050 2    50   ~ 0
+O_152
+Text Label 8975 6150 2    50   ~ 0
+O_153
+Text Label 8975 6250 2    50   ~ 0
+O_154
+Text Label 8975 6350 2    50   ~ 0
+O_155
+Text Label 8975 6450 2    50   ~ 0
+O_156
+Text Label 8975 6550 2    50   ~ 0
+O_157
+Text Label 8975 6650 2    50   ~ 0
+O_158
+Text Label 8975 6750 2    50   ~ 0
+O_159
+Text Label 8975 6850 2    50   ~ 0
+O_160
+Text Label 9850 2625 2    50   ~ 0
+O_161
+Text Label 9850 2725 2    50   ~ 0
+O_162
+Text Label 9850 2825 2    50   ~ 0
+O_163
+Text Label 9850 2925 2    50   ~ 0
+O_164
+Text Label 9850 3025 2    50   ~ 0
+O_165
+Text Label 9850 3125 2    50   ~ 0
+O_166
+Text Label 9850 3225 2    50   ~ 0
+O_167
+Text Label 9850 3325 2    50   ~ 0
+O_168
+Text Label 9850 3425 2    50   ~ 0
+O_169
+Text Label 9850 3525 2    50   ~ 0
+O_170
+Text Label 9850 3625 2    50   ~ 0
+O_171
+Text Label 9850 3725 2    50   ~ 0
+O_172
+Text Label 9850 3825 2    50   ~ 0
+O_173
+Text Label 9850 3925 2    50   ~ 0
+O_174
+Text Label 9850 4025 2    50   ~ 0
+O_175
+Text Label 9850 4125 2    50   ~ 0
+O_176
+Text Label 9850 4225 2    50   ~ 0
+O_177
+Text Label 9850 4325 2    50   ~ 0
+O_178
+Text Label 9850 4425 2    50   ~ 0
+O_179
+Text Label 9850 4525 2    50   ~ 0
+O_180
+Text Label 9850 4950 2    50   ~ 0
+O_181
+Text Label 9850 5050 2    50   ~ 0
+O_182
+Text Label 9850 5150 2    50   ~ 0
+O_183
+Text Label 9850 5250 2    50   ~ 0
+O_184
+Text Label 9850 5350 2    50   ~ 0
+O_185
+Text Label 9850 5450 2    50   ~ 0
+O_186
+Text Label 9850 5550 2    50   ~ 0
+O_187
+Text Label 9850 5650 2    50   ~ 0
+O_188
+Text Label 9850 5750 2    50   ~ 0
+O_189
+Text Label 9850 5850 2    50   ~ 0
+O_190
+Text Label 9850 5950 2    50   ~ 0
+O_191
+Text Label 9850 6050 2    50   ~ 0
+O_192
+Text Label 9850 6150 2    50   ~ 0
+O_193
+Text Label 9850 6250 2    50   ~ 0
+O_194
+Text Label 9850 6350 2    50   ~ 0
+O_195
+Text Label 9850 6450 2    50   ~ 0
+O_196
+Text Label 9850 6550 2    50   ~ 0
+O_197
+Text Label 9850 6650 2    50   ~ 0
+O_198
+Text Label 9850 6750 2    50   ~ 0
+O_199
+Text Label 9850 6850 2    50   ~ 0
+O_200
+$Comp
+L power:+12V #PWR02
+U 1 1 5BF64A73
+P 8825 750
+F 0 "#PWR02" H 8825 600 50  0001 C CNN
+F 1 "+12V" H 8840 923 50  0000 C CNN
+F 2 "" H 8825 750 50  0001 C CNN
+F 3 "" H 8825 750 50  0001 C CNN
+	1    8825 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5BF64ABC
+P 8825 1450
+F 0 "#PWR03" H 8825 1200 50  0001 C CNN
+F 1 "GND" H 8830 1277 50  0000 C CNN
+F 2 "" H 8825 1450 50  0001 C CNN
+F 3 "" H 8825 1450 50  0001 C CNN
+	1    8825 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8825 1125 8825 1450
+Wire Wire Line
+	8825 1125 8900 1125
+Wire Wire Line
+	8600 1025 8900 1025
+Wire Wire Line
+	8825 750  8825 1025
+Wire Wire Line
+	8900 1225 8825 1225
+Connection ~ 8825 1225
+Wire Wire Line
+	8825 925  8900 925 
+Connection ~ 8825 925 
+$Comp
+L Connector:Screw_Terminal_01x06 J1001
+U 1 1 5BF668E9
+P 9100 1025
+F 0 "J1001" V 9275 900 50  0000 L CNN
+F 1 "Screw_Terminal_01x06" V 9200 575 50  0000 L CNN
+F 2 "CustomFootprints:399700106" H 9100 1025 50  0001 C CNN
+F 3 "~" H 9100 1025 50  0001 C CNN
+	1    9100 1025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8825 1325 8900 1325
+Connection ~ 8825 1325
+Wire Wire Line
+	8900 825  8825 825 
+Connection ~ 8825 825 
+$Comp
+L power:+12V #PWR04
+U 1 1 5BF682F9
+P 6475 2250
+F 0 "#PWR04" H 6475 2100 50  0001 C CNN
+F 1 "+12V" V 6490 2378 50  0000 L CNN
+F 2 "" H 6475 2250 50  0001 C CNN
+F 3 "" H 6475 2250 50  0001 C CNN
+	1    6475 2250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6475 2250 6575 2250
+Wire Wire Line
+	6575 2250 6575 2225
+$Comp
+L power:+5V #PWR05
+U 1 1 5BF6846A
+P 6675 2325
+F 0 "#PWR05" H 6675 2175 50  0001 C CNN
+F 1 "+5V" V 6690 2453 50  0000 L CNN
+F 2 "" H 6675 2325 50  0001 C CNN
+F 3 "" H 6675 2325 50  0001 C CNN
+	1    6675 2325
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6675 2225 6675 2325
+$Comp
+L power:+3V3 #PWR06
+U 1 1 5BF68B47
+P 6775 2425
+F 0 "#PWR06" H 6775 2275 50  0001 C CNN
+F 1 "+3V3" V 6790 2553 50  0000 L CNN
+F 2 "" H 6775 2425 50  0001 C CNN
+F 3 "" H 6775 2425 50  0001 C CNN
+	1    6775 2425
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6775 2225 6775 2425
+NoConn ~ 7875 875 
+NoConn ~ 7975 875 
+NoConn ~ 8075 875 
+NoConn ~ 8175 875 
+NoConn ~ 8275 875 
+NoConn ~ 6275 875 
+NoConn ~ 6175 875 
+NoConn ~ 6925 2225
+NoConn ~ 7375 2225
+$Comp
+L power:PWR_FLAG #FLG07
+U 1 1 5BF70B0C
+P 8600 1025
+F 0 "#FLG07" H 8600 1100 50  0001 C CNN
+F 1 "PWR_FLAG" H 8600 1199 50  0000 C CNN
+F 2 "" H 8600 1025 50  0001 C CNN
+F 3 "~" H 8600 1025 50  0001 C CNN
+	1    8600 1025
+	1    0    0    -1  
+$EndComp
+Connection ~ 8825 1025
+$Comp
+L power:PWR_FLAG #FLG08
+U 1 1 5BF7101F
+P 6775 2375
+F 0 "#FLG08" H 6775 2450 50  0001 C CNN
+F 1 "PWR_FLAG" V 6775 2503 50  0000 L CNN
+F 2 "" H 6775 2375 50  0001 C CNN
+F 3 "~" H 6775 2375 50  0001 C CNN
+	1    6775 2375
+	0    1    1    0   
+$EndComp
+Connection ~ 6775 2375
+$Comp
+L power:PWR_FLAG #FLG09
+U 1 1 5BF71049
+P 6675 2275
+F 0 "#FLG09" H 6675 2350 50  0001 C CNN
+F 1 "PWR_FLAG" V 6675 2403 50  0000 L CNN
+F 2 "" H 6675 2275 50  0001 C CNN
+F 3 "~" H 6675 2275 50  0001 C CNN
+	1    6675 2275
+	0    1    1    0   
+$EndComp
+Connection ~ 6675 2275
+$Sheet
+S 1000 800  1050 6450
+U 5BE94332
+F0 "ShiftRegisters" 50
+F1 "ShiftRegisters.sch" 50
+F2 "EM_1" O R 2050 900 50 
+F3 "EM_2" O R 2050 1000 50 
+F4 "EM_3" O R 2050 1100 50 
+F5 "EM_4" O R 2050 1200 50 
+F6 "EM_5" O R 2050 1300 50 
+F7 "EM_6" O R 2050 1400 50 
+F8 "EM_7" O R 2050 1500 50 
+F9 "EM_8" O R 2050 1600 50 
+F10 "EM_9" O R 2050 1700 50 
+F11 "EM_10" O R 2050 1800 50 
+F12 "EM_11" O R 2050 1900 50 
+F13 "EM_12" O R 2050 2000 50 
+F14 "EM_13" O R 2050 2100 50 
+F15 "EM_14" O R 2050 2200 50 
+F16 "EM_15" O R 2050 2300 50 
+F17 "EM_16" O R 2050 2400 50 
+F18 "EM_17" O R 2050 2500 50 
+F19 "EM_18" O R 2050 2600 50 
+F20 "EM_19" O R 2050 2700 50 
+F21 "EM_20" O R 2050 2800 50 
+F22 "EM_21" O R 2050 2900 50 
+F23 "EM_22" O R 2050 3000 50 
+F24 "EM_23" O R 2050 3100 50 
+F25 "EM_24" O R 2050 3200 50 
+F26 "EM_25" O R 2050 3300 50 
+F27 "EM_26" O R 2050 3400 50 
+F28 "EM_27" O R 2050 3500 50 
+F29 "EM_28" O R 2050 3600 50 
+F30 "EM_29" O R 2050 3700 50 
+F31 "EM_30" O R 2050 3800 50 
+F32 "EM_31" O R 2050 3900 50 
+F33 "EM_32" O R 2050 4000 50 
+F34 "EM_33" O R 2050 4100 50 
+F35 "EM_34" O R 2050 4200 50 
+F36 "EM_35" O R 2050 4300 50 
+F37 "EM_36" O R 2050 4400 50 
+F38 "EM_37" O R 2050 4500 50 
+F39 "EM_38" O R 2050 4600 50 
+F40 "EM_39" O R 2050 4700 50 
+F41 "EM_40" O R 2050 4800 50 
+F42 "EM_41" O R 2050 4900 50 
+F43 "EM_42" O R 2050 5000 50 
+F44 "EM_43" O R 2050 5100 50 
+F45 "EM_44" O R 2050 5200 50 
+F46 "EM_45" O R 2050 5300 50 
+F47 "EM_46" O R 2050 5400 50 
+F48 "EM_47" O R 2050 5500 50 
+F49 "EM_48" O R 2050 5600 50 
+F50 "EM_49" O R 2050 5700 50 
+F51 "EM_50" O R 2050 5800 50 
+F52 "EM_51" O R 2050 5900 50 
+F53 "EM_52" O R 2050 6000 50 
+F54 "EM_53" O R 2050 6100 50 
+F55 "EM_54" O R 2050 6200 50 
+F56 "EM_55" O R 2050 6300 50 
+F57 "EM_56" O R 2050 6400 50 
+F58 "EM_57" O R 2050 6500 50 
+F59 "EM_58" O R 2050 6600 50 
+F60 "EM_59" O R 2050 6700 50 
+F61 "EM_60" O R 2050 6800 50 
+F62 "EM_61" O R 2050 6900 50 
+F63 "EM_62" O R 2050 7000 50 
+F64 "EM_63" O R 2050 7100 50 
+F65 "EM_64" O R 2050 7200 50 
+F66 "SRCLK" I L 1000 1200 50 
+F67 "SRCLR" I L 1000 1300 50 
+F68 "RCLK" I L 1000 1400 50 
+F69 "SER_IN" I L 1000 1100 50 
+F70 "SER_OUT" I L 1000 1000 50 
+$EndSheet
+$Sheet
+S 2700 800  1050 6450
+U 5BEA16D5
+F0 "sheet5BEA168E" 50
+F1 "ShiftRegisters.sch" 50
+F2 "EM_1" O R 3750 900 50 
+F3 "EM_2" O R 3750 1000 50 
+F4 "EM_3" O R 3750 1100 50 
+F5 "EM_4" O R 3750 1200 50 
+F6 "EM_5" O R 3750 1300 50 
+F7 "EM_6" O R 3750 1400 50 
+F8 "EM_7" O R 3750 1500 50 
+F9 "EM_8" O R 3750 1600 50 
+F10 "EM_9" O R 3750 1700 50 
+F11 "EM_10" O R 3750 1800 50 
+F12 "EM_11" O R 3750 1900 50 
+F13 "EM_12" O R 3750 2000 50 
+F14 "EM_13" O R 3750 2100 50 
+F15 "EM_14" O R 3750 2200 50 
+F16 "EM_15" O R 3750 2300 50 
+F17 "EM_16" O R 3750 2400 50 
+F18 "EM_17" O R 3750 2500 50 
+F19 "EM_18" O R 3750 2600 50 
+F20 "EM_19" O R 3750 2700 50 
+F21 "EM_20" O R 3750 2800 50 
+F22 "EM_21" O R 3750 2900 50 
+F23 "EM_22" O R 3750 3000 50 
+F24 "EM_23" O R 3750 3100 50 
+F25 "EM_24" O R 3750 3200 50 
+F26 "EM_25" O R 3750 3300 50 
+F27 "EM_26" O R 3750 3400 50 
+F28 "EM_27" O R 3750 3500 50 
+F29 "EM_28" O R 3750 3600 50 
+F30 "EM_29" O R 3750 3700 50 
+F31 "EM_30" O R 3750 3800 50 
+F32 "EM_31" O R 3750 3900 50 
+F33 "EM_32" O R 3750 4000 50 
+F34 "EM_33" O R 3750 4100 50 
+F35 "EM_34" O R 3750 4200 50 
+F36 "EM_35" O R 3750 4300 50 
+F37 "EM_36" O R 3750 4400 50 
+F38 "EM_37" O R 3750 4500 50 
+F39 "EM_38" O R 3750 4600 50 
+F40 "EM_39" O R 3750 4700 50 
+F41 "EM_40" O R 3750 4800 50 
+F42 "EM_41" O R 3750 4900 50 
+F43 "EM_42" O R 3750 5000 50 
+F44 "EM_43" O R 3750 5100 50 
+F45 "EM_44" O R 3750 5200 50 
+F46 "EM_45" O R 3750 5300 50 
+F47 "EM_46" O R 3750 5400 50 
+F48 "EM_47" O R 3750 5500 50 
+F49 "EM_48" O R 3750 5600 50 
+F50 "EM_49" O R 3750 5700 50 
+F51 "EM_50" O R 3750 5800 50 
+F52 "EM_51" O R 3750 5900 50 
+F53 "EM_52" O R 3750 6000 50 
+F54 "EM_53" O R 3750 6100 50 
+F55 "EM_54" O R 3750 6200 50 
+F56 "EM_55" O R 3750 6300 50 
+F57 "EM_56" O R 3750 6400 50 
+F58 "EM_57" O R 3750 6500 50 
+F59 "EM_58" O R 3750 6600 50 
+F60 "EM_59" O R 3750 6700 50 
+F61 "EM_60" O R 3750 6800 50 
+F62 "EM_61" O R 3750 6900 50 
+F63 "EM_62" O R 3750 7000 50 
+F64 "EM_63" O R 3750 7100 50 
+F65 "EM_64" O R 3750 7200 50 
+F66 "SRCLK" I L 2700 1200 50 
+F67 "SRCLR" I L 2700 1300 50 
+F68 "RCLK" I L 2700 1400 50 
+F69 "SER_IN" I L 2700 1100 50 
+F70 "SER_OUT" I L 2700 1000 50 
+$EndSheet
+Text Label 1000 1200 2    50   ~ 0
+SRCLK
+Text Label 1000 1300 2    50   ~ 0
+SRCLR
+Text Label 1000 1400 2    50   ~ 0
+RCLK
+Text Label 1000 1000 2    50   ~ 0
+SER_1_2
+Text Label 2700 1100 2    50   ~ 0
+SER_1_2
+Text Label 2700 1200 2    50   ~ 0
+SRCLK
+Text Label 2700 1300 2    50   ~ 0
+SRCLR
+Text Label 2700 1400 2    50   ~ 0
+RCLK
+Text Label 2700 1000 2    50   ~ 0
+SER_2_3
+Text Label 4400 1100 2    50   ~ 0
+SER_2_3
+Text Label 4400 1200 2    50   ~ 0
+SRCLK
+Text Label 4400 1300 2    50   ~ 0
+SRCLR
+Text Label 4400 1400 2    50   ~ 0
+RCLK
+Text Label 6375 875  1    50   ~ 0
+SRCLK
+Text Label 6475 875  1    50   ~ 0
+SRCLR
+Text Label 6575 875  1    50   ~ 0
+RCLK
+Text Label 6675 875  1    50   ~ 0
+SER
+$Comp
+L 74xx:74HC595 U?
+U 1 1 5C14E35E
+P 10225 1375
+AR Path="/5BE94332/5C14E35E" Ref="U?"  Part="1" 
+AR Path="/5BEA16D5/5C14E35E" Ref="U?"  Part="1" 
+AR Path="/5BEA1723/5C14E35E" Ref="U?"  Part="1" 
+AR Path="/5C14E35E" Ref="U1001"  Part="1" 
+F 0 "U1001" H 10375 1975 50  0000 C CNN
+F 1 "74HC595" H 9925 1975 50  0000 C CNN
+F 2 "CustomFootprints:74HC595D" H 10225 1375 50  0001 C CNN
+F 3 "http://www.nxp.com/documents/data_sheet/74HC_HCT595.pdf" H 10225 1375 50  0001 C CNN
+	1    10225 1375
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 5C14E365
+P 9625 1575
+F 0 "#PWR010" H 9625 1325 50  0001 C CNN
+F 1 "GND" H 9630 1402 50  0000 C CNN
+F 2 "" H 9625 1575 50  0001 C CNN
+F 3 "" H 9625 1575 50  0001 C CNN
+	1    9625 1575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9725 1575 9625 1575
+$Comp
+L power:GND #PWR011
+U 1 1 5C14E36C
+P 10225 2225
+F 0 "#PWR011" H 10225 1975 50  0001 C CNN
+F 1 "GND" H 10230 2052 50  0000 C CNN
+F 2 "" H 10225 2225 50  0001 C CNN
+F 3 "" H 10225 2225 50  0001 C CNN
+	1    10225 2225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10225 2175 10225 2225
+$Comp
+L power:+5V #PWR012
+U 1 1 5C14E376
+P 10225 625
+F 0 "#PWR012" H 10225 475 50  0001 C CNN
+F 1 "+5V" H 10240 798 50  0000 C CNN
+F 2 "" H 10225 625 50  0001 C CNN
+F 3 "" H 10225 625 50  0001 C CNN
+	1    10225 625 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10225 625  10225 675 
+Text Label 4400 1000 2    50   ~ 0
+SER_3_F
+Text Label 9725 975  2    50   ~ 0
+SER_3_F
+Text Label 10725 975  0    50   ~ 0
+O_193
+Text Label 10725 1075 0    50   ~ 0
+O_194
+Text Label 10725 1175 0    50   ~ 0
+O_195
+Text Label 10725 1275 0    50   ~ 0
+O_196
+Text Label 10725 1375 0    50   ~ 0
+O_197
+Text Label 10725 1475 0    50   ~ 0
+O_198
+Text Label 10725 1575 0    50   ~ 0
+O_199
+Text Label 10725 1675 0    50   ~ 0
+O_200
+NoConn ~ 10725 1875
+Text Label 9725 1175 2    50   ~ 0
+SRCLK
+Text Label 9725 1275 2    50   ~ 0
+SRCLR
+Text Label 9725 1475 2    50   ~ 0
+RCLK
+NoConn ~ 6775 875 
+NoConn ~ 6875 875 
+NoConn ~ 6975 875 
+NoConn ~ 7075 875 
+NoConn ~ 7175 875 
+NoConn ~ 7275 875 
+NoConn ~ 7375 875 
+NoConn ~ 7475 875 
+NoConn ~ 7575 875 
+NoConn ~ 7675 875 
+NoConn ~ 7775 875 
+$EndSCHEMATC
