@@ -1,10 +1,11 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 2
+LIBS:power
 LIBS:ferrofluid_display-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 114
+Sheet 3 114
 Title ""
 Date ""
 Rev ""
