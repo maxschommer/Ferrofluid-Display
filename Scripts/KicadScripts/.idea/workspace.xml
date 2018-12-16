@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0e2dea7e-1163-4d7f-aaeb-7ccba087761d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../Electrical/ferrofluid_display/ferrofluid_display.kicad_pcb" beforeDir="false" afterPath="$PROJECT_DIR$/../../Electrical/ferrofluid_display/ferrofluid_display.kicad_pcb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Electrical/ferrofluid_display/ferrofluid_display.kicad_pcb-bak" beforeDir="false" afterPath="$PROJECT_DIR$/../../Electrical/ferrofluid_display/ferrofluid_display.kicad_pcb-bak" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Electrical/ferrofluid_display/ferrofluid_display.pro" beforeDir="false" afterPath="$PROJECT_DIR$/../../Electrical/ferrofluid_display/ferrofluid_display.pro" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Electrical/ferrofluid_display/sym-lib-table" beforeDir="false" afterPath="$PROJECT_DIR$/../../Electrical/ferrofluid_display/sym-lib-table" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="0e2dea7e-1163-4d7f-aaeb-7ccba087761d" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +109,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1785" height="1027" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.076136366" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
