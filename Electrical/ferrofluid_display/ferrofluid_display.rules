@@ -1,0 +1,175 @@
+
+(rules PCB ferrofluid_display
+  (snap_angle 
+    none
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 1)
+    (start_ripup_costs 100)
+    (start_pass_no 40)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.8)
+      (against_preferred_direction_trace_costs 2.8)
+    )
+    (layer_rule In1.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+    (layer_rule In2.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.0)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.8)
+      (against_preferred_direction_trace_costs 2.8)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.2)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-3]_800:400_um"
+    (shape
+      (circle F.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle In1.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle In2.Cu 800.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-3]_800:400_um" "Via[0-3]_800:400_um" default
+  )
+  (via 
+    "Via[0-3]_800:400_um-kicad_default" "Via[0-3]_800:400_um" "kicad_default"
+  )
+  (via_rule
+    default "Via[0-3]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-3]_800:400_um-kicad_default"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu In1.Cu In2.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    +12V GND +5V "Net-(A1001-Pad16)" "Net-(A1001-Pad15)" "Net-(A1001-Pad14)" "Net-(A1001-Pad13)" "Net-(A1001-Pad12)"
+    "Net-(A1001-Pad11)" "Net-(A1001-Pad26)" "Net-(A1001-Pad10)" "Net-(A1001-Pad25)" "Net-(A1001-Pad9)" "Net-(A1001-Pad24)" /SER "Net-(A1001-Pad23)"
+    /RCLK "Net-(A1001-Pad22)" /SRCLR "Net-(A1001-Pad21)" /SRCLK "Net-(A1001-Pad20)" "Net-(A1001-Pad19)" "Net-(A1001-Pad3)"
+    "Net-(A1001-Pad18)" "Net-(A1001-Pad2)" +3V3 "Net-(A1001-Pad1)" "Net-(D6001-Pad1)" "Net-(D6001-Pad2)" "Net-(D6002-Pad1)" "Net-(D6002-Pad2)"
+    "Net-(D7001-Pad1)" "Net-(D7001-Pad2)" "Net-(D7002-Pad1)" "Net-(D7002-Pad2)" "Net-(D8001-Pad1)" "Net-(D8001-Pad2)" "Net-(D8002-Pad1)" "Net-(D8002-Pad2)"
+    "Net-(D9001-Pad1)" "Net-(D9001-Pad2)" "Net-(D9002-Pad1)" "Net-(D9002-Pad2)" "Net-(D10001-Pad1)" "Net-(D10001-Pad2)" "Net-(D10002-Pad2)" "Net-(D10002-Pad1)"
+    "Net-(D11001-Pad2)" "Net-(D11001-Pad1)" "Net-(D11002-Pad2)" "Net-(D11002-Pad1)" "Net-(D12001-Pad2)" "Net-(D12001-Pad1)" "Net-(D12002-Pad1)" "Net-(D12002-Pad2)"
+    "Net-(D13001-Pad1)" "Net-(D13001-Pad2)" "Net-(D13002-Pad2)" "Net-(D13002-Pad1)" "Net-(D14001-Pad1)" "Net-(D14001-Pad2)" "Net-(D14002-Pad2)" "Net-(D14002-Pad1)"
+    "Net-(D15001-Pad2)" "Net-(D15001-Pad1)" "Net-(D15002-Pad1)" "Net-(D15002-Pad2)" "Net-(D17001-Pad1)" "Net-(D17001-Pad2)" "Net-(D17002-Pad1)" "Net-(D17002-Pad2)"
+    "Net-(D18001-Pad1)" "Net-(D18001-Pad2)" "Net-(D18002-Pad2)" "Net-(D18002-Pad1)" "Net-(D19001-Pad2)" "Net-(D19001-Pad1)" "Net-(D19002-Pad2)" "Net-(D19002-Pad1)"
+    "Net-(D20001-Pad1)" "Net-(D20001-Pad2)" "Net-(D20002-Pad2)" "Net-(D20002-Pad1)" "Net-(D21001-Pad2)" "Net-(D21001-Pad1)" "Net-(D21002-Pad2)" "Net-(D21002-Pad1)"
+    "Net-(D22001-Pad2)" "Net-(D22001-Pad1)" "Net-(D22002-Pad2)" "Net-(D22002-Pad1)" "Net-(D23001-Pad2)" "Net-(D23001-Pad1)" "Net-(D23002-Pad2)" "Net-(D23002-Pad1)"
+    "Net-(D24001-Pad2)" "Net-(D24001-Pad1)" "Net-(D24002-Pad2)" "Net-(D24002-Pad1)" "Net-(D25001-Pad2)" "Net-(D25001-Pad1)" "Net-(D25002-Pad2)" "Net-(D25002-Pad1)"
+    "Net-(D26001-Pad2)" "Net-(D26001-Pad1)" "Net-(D26002-Pad2)" "Net-(D26002-Pad1)" "Net-(D28001-Pad2)" "Net-(D28001-Pad1)" "Net-(D28002-Pad1)" "Net-(D28002-Pad2)"
+    "Net-(D29001-Pad2)" "Net-(D29001-Pad1)" "Net-(D29002-Pad2)" "Net-(D29002-Pad1)" "Net-(D30001-Pad2)" "Net-(D30001-Pad1)" "Net-(D30002-Pad2)" "Net-(D30002-Pad1)"
+    "Net-(D31001-Pad1)" "Net-(D31001-Pad2)" "Net-(D31002-Pad1)" "Net-(D31002-Pad2)" "Net-(D32001-Pad2)" "Net-(D32001-Pad1)" "Net-(D32002-Pad2)" "Net-(D32002-Pad1)"
+    "Net-(D33001-Pad2)" "Net-(D33001-Pad1)" "Net-(D33002-Pad1)" "Net-(D33002-Pad2)" "Net-(D34001-Pad1)" "Net-(D34001-Pad2)" "Net-(D34002-Pad1)" "Net-(D34002-Pad2)"
+    "Net-(D35001-Pad1)" "Net-(D35001-Pad2)" "Net-(D35002-Pad1)" "Net-(D35002-Pad2)" "Net-(D36001-Pad1)" "Net-(D36001-Pad2)" "Net-(D36002-Pad1)" "Net-(D36002-Pad2)"
+    "Net-(D37001-Pad1)" "Net-(D37001-Pad2)" "Net-(D37002-Pad1)" "Net-(D37002-Pad2)" "Net-(D39001-Pad1)" "Net-(D39001-Pad2)" "Net-(D39002-Pad1)" "Net-(D39002-Pad2)"
+    "Net-(D40001-Pad2)" "Net-(D40001-Pad1)" "Net-(D40002-Pad1)" "Net-(D40002-Pad2)" "Net-(D41001-Pad1)" "Net-(D41001-Pad2)" "Net-(D41002-Pad1)" "Net-(D41002-Pad2)"
+    "Net-(D42001-Pad1)" "Net-(D42001-Pad2)" "Net-(D42002-Pad1)" "Net-(D42002-Pad2)" "Net-(D43001-Pad1)" "Net-(D43001-Pad2)" "Net-(D43002-Pad1)" "Net-(D43002-Pad2)"
+    "Net-(D44001-Pad1)" "Net-(D44001-Pad2)" "Net-(D44002-Pad1)" "Net-(D44002-Pad2)" "Net-(D45001-Pad1)" "Net-(D45001-Pad2)" "Net-(D45002-Pad2)" "Net-(D45002-Pad1)"
+    "Net-(D46001-Pad2)" "Net-(D46001-Pad1)" "Net-(D46002-Pad2)" "Net-(D46002-Pad1)" "Net-(D47001-Pad2)" "Net-(D47001-Pad1)" "Net-(D47002-Pad2)" "Net-(D47002-Pad1)"
+    "Net-(D48001-Pad2)" "Net-(D48001-Pad1)" "Net-(D48002-Pad2)" "Net-(D48002-Pad1)" "Net-(D50001-Pad2)" "Net-(D50001-Pad1)" "Net-(D50002-Pad1)" "Net-(D50002-Pad2)"
+    "Net-(D51001-Pad1)" "Net-(D51001-Pad2)" "Net-(D51002-Pad1)" "Net-(D51002-Pad2)" "Net-(D52001-Pad1)" "Net-(D52001-Pad2)" "Net-(D52002-Pad1)" "Net-(D52002-Pad2)"
+    "Net-(D53001-Pad1)" "Net-(D53001-Pad2)" "Net-(D53002-Pad2)" "Net-(D53002-Pad1)" "Net-(D54001-Pad2)" "Net-(D54001-Pad1)" "Net-(D54002-Pad2)" "Net-(D54002-Pad1)"
+    "Net-(D55001-Pad1)" "Net-(D55001-Pad2)" "Net-(D55002-Pad2)" "Net-(D55002-Pad1)" "Net-(D56001-Pad2)" "Net-(D56001-Pad1)" "Net-(D56002-Pad2)" "Net-(D56002-Pad1)"
+    "Net-(D57001-Pad2)" "Net-(D57001-Pad1)" "Net-(D57002-Pad2)" "Net-(D57002-Pad1)" "Net-(D58001-Pad2)" "Net-(D58001-Pad1)" "Net-(D58002-Pad1)" "Net-(D58002-Pad2)"
+    "Net-(D59001-Pad2)" "Net-(D59001-Pad1)" "Net-(D59002-Pad2)" "Net-(D59002-Pad1)" "Net-(D61001-Pad1)" "Net-(D61001-Pad2)" "Net-(D61002-Pad2)" "Net-(D61002-Pad1)"
+    "Net-(D62001-Pad1)" "Net-(D62001-Pad2)" "Net-(D62002-Pad2)" "Net-(D62002-Pad1)" "Net-(D63001-Pad1)" "Net-(D63001-Pad2)" "Net-(D63002-Pad2)" "Net-(D63002-Pad1)"
+    "Net-(D64001-Pad2)" "Net-(D64001-Pad1)" "Net-(D64002-Pad1)" "Net-(D64002-Pad2)" "Net-(D65001-Pad2)" "Net-(D65001-Pad1)" "Net-(D65002-Pad1)" "Net-(D65002-Pad2)"
+    "Net-(D66001-Pad1)" "Net-(D66001-Pad2)" "Net-(D66002-Pad1)" "Net-(D66002-Pad2)" "Net-(D67001-Pad2)" "Net-(D67001-Pad1)" "Net-(D67002-Pad1)" "Net-(D67002-Pad2)"
+    "Net-(D68001-Pad2)" "Net-(D68001-Pad1)" "Net-(D68002-Pad2)" "Net-(D68002-Pad1)" "Net-(D69001-Pad1)" "Net-(D69001-Pad2)" "Net-(D69002-Pad2)" "Net-(D69002-Pad1)"
+    "Net-(D70001-Pad1)" "Net-(D70001-Pad2)" "Net-(D70002-Pad2)" "Net-(D70002-Pad1)" "Net-(D72001-Pad1)" "Net-(D72001-Pad2)" "Net-(D72002-Pad2)" "Net-(D72002-Pad1)"
+    "Net-(D73001-Pad1)" "Net-(D73001-Pad2)" "Net-(D73002-Pad2)" "Net-(D73002-Pad1)" "Net-(D74001-Pad2)" "Net-(D74001-Pad1)" "Net-(D74002-Pad1)" "Net-(D74002-Pad2)"
+    "Net-(D75001-Pad2)" "Net-(D75001-Pad1)" "Net-(D75002-Pad1)" "Net-(D75002-Pad2)" "Net-(D76001-Pad2)" "Net-(D76001-Pad1)" "Net-(D76002-Pad1)" "Net-(D76002-Pad2)"
+    "Net-(D77001-Pad2)" "Net-(D77001-Pad1)" "Net-(D77002-Pad1)" "Net-(D77002-Pad2)" "Net-(D78001-Pad1)" "Net-(D78001-Pad2)" "Net-(D78002-Pad1)" "Net-(D78002-Pad2)"
+    "Net-(D79001-Pad2)" "Net-(D79001-Pad1)" "Net-(D79002-Pad1)" "Net-(D79002-Pad2)" "Net-(D80001-Pad2)" "Net-(D80001-Pad1)" "Net-(D80002-Pad1)" "Net-(D80002-Pad2)"
+    "Net-(D81001-Pad2)" "Net-(D81001-Pad1)" "Net-(D81002-Pad1)" "Net-(D81002-Pad2)" "Net-(D83001-Pad2)" "Net-(D83001-Pad1)" "Net-(D83002-Pad2)" "Net-(D83002-Pad1)"
+    "Net-(D84001-Pad2)" "Net-(D84001-Pad1)" "Net-(D84002-Pad1)" "Net-(D84002-Pad2)" "Net-(D85001-Pad2)" "Net-(D85001-Pad1)" "Net-(D85002-Pad1)" "Net-(D85002-Pad2)"
+    "Net-(D86001-Pad2)" "Net-(D86001-Pad1)" "Net-(D86002-Pad1)" "Net-(D86002-Pad2)" "Net-(D87001-Pad2)" "Net-(D87001-Pad1)" "Net-(D87002-Pad1)" "Net-(D87002-Pad2)"
+    "Net-(D88001-Pad1)" "Net-(D88001-Pad2)" "Net-(D88002-Pad2)" "Net-(D88002-Pad1)" "Net-(D89001-Pad1)" "Net-(D89001-Pad2)" "Net-(D89002-Pad2)" "Net-(D89002-Pad1)"
+    "Net-(D90001-Pad1)" "Net-(D90001-Pad2)" "Net-(D90002-Pad2)" "Net-(D90002-Pad1)" "Net-(D91001-Pad1)" "Net-(D91001-Pad2)" "Net-(D91002-Pad2)" "Net-(D91002-Pad1)"
+    "Net-(D92001-Pad2)" "Net-(D92001-Pad1)" "Net-(D92002-Pad2)" "Net-(D92002-Pad1)" "Net-(D94001-Pad1)" "Net-(D94001-Pad2)" "Net-(D94002-Pad2)" "Net-(D94002-Pad1)"
+    "Net-(D95001-Pad1)" "Net-(D95001-Pad2)" "Net-(D95002-Pad2)" "Net-(D95002-Pad1)" "Net-(D96001-Pad1)" "Net-(D96001-Pad2)" "Net-(D96002-Pad2)" "Net-(D96002-Pad1)"
+    "Net-(D97001-Pad1)" "Net-(D97001-Pad2)" "Net-(D97002-Pad1)" "Net-(D97002-Pad2)" "Net-(D98001-Pad2)" "Net-(D98001-Pad1)" "Net-(D98002-Pad1)" "Net-(D98002-Pad2)"
+    "Net-(D99001-Pad2)" "Net-(D99001-Pad1)" "Net-(D99002-Pad1)" "Net-(D99002-Pad2)" "Net-(D100001-Pad2)" "Net-(D100001-Pad1)" "Net-(D100002-Pad1)" "Net-(D100002-Pad2)"
+    "Net-(D101001-Pad2)" "Net-(D101001-Pad1)" "Net-(D101002-Pad1)" "Net-(D101002-Pad2)" "Net-(D102001-Pad2)" "Net-(D102001-Pad1)" "Net-(D102002-Pad1)" "Net-(D102002-Pad2)"
+    "Net-(D103001-Pad2)" "Net-(D103001-Pad1)" "Net-(D103002-Pad1)" "Net-(D103002-Pad2)" "Net-(D105001-Pad2)" "Net-(D105001-Pad1)" "Net-(D105002-Pad1)" "Net-(D105002-Pad2)"
+    "Net-(D106001-Pad2)" "Net-(D106001-Pad1)" "Net-(D106002-Pad2)" "Net-(D106002-Pad1)" "Net-(D107001-Pad1)" "Net-(D107001-Pad2)" "Net-(D107002-Pad2)" "Net-(D107002-Pad1)"
+    "Net-(D108001-Pad1)" "Net-(D108001-Pad2)" "Net-(D108002-Pad2)" "Net-(D108002-Pad1)" "Net-(D109001-Pad1)" "Net-(D109001-Pad2)" "Net-(D109002-Pad2)" "Net-(D109002-Pad1)"
+    "Net-(D110001-Pad1)" "Net-(D110001-Pad2)" "Net-(D110002-Pad1)" "Net-(D110002-Pad2)" "Net-(D111001-Pad1)" "Net-(D111001-Pad2)" "Net-(D111002-Pad2)" "Net-(D111002-Pad1)"
+    "Net-(D112001-Pad1)" "Net-(D112001-Pad2)" "Net-(D112002-Pad2)" "Net-(D112002-Pad1)" "Net-(D113001-Pad1)" "Net-(D113001-Pad2)" "Net-(D113002-Pad2)" "Net-(D113002-Pad1)"
+    "Net-(D114001-Pad1)" "Net-(D114001-Pad2)" "Net-(D114002-Pad1)" "Net-(D114002-Pad2)" "/O_194" "/O_195" "/O_196" "/O_197"
+    "/O_198" "/O_199" "/O_200" "Net-(U1001-Pad9)" "/SER_3_F" "/O_193" "/O_1" "/ShiftRegisters/IO_1_2"
+    "/O_8" "/O_7" "/O_6" "/O_5" "/O_4" "/O_3" "/O_2" "/O_10"
+    "/O_11" "/O_12" "/O_13" "/O_14" "/O_15" "/O_16" "/ShiftRegisters/IO_2_3" "/O_9"
+    "/O_17" "/ShiftRegisters/IO_3_4" "/O_24" "/O_23" "/O_22" "/O_21" "/O_20" "/O_19"
+    "/O_18" "/O_26" "/O_27" "/O_28" "/O_29" "/O_30" "/O_31" "/O_32"
+    "/ShiftRegisters/IO_4_5" "/O_25" "/O_33" "/ShiftRegisters/IO_5_6" "/O_40" "/O_39" "/O_38" "/O_37"
+    "/O_36" "/O_35" "/O_34" "/O_42" "/O_43" "/O_44" "/O_45" "/O_46"
+    "/O_47" "/O_48" "/ShiftRegisters/IO_6_7" "/O_41" "/O_49" "/ShiftRegisters/IO_7_8" "/O_56" "/O_55"
+    "/O_54" "/O_53" "/O_52" "/O_51" "/O_50" "/O_58" "/O_59" "/O_60"
+    "/O_61" "/O_62" "/O_63" "/O_64" "/SER_1_2" "/O_57" "/O_65" "/sheet5BEA168E/IO_1_2"
+    "/O_72" "/O_71" "/O_70" "/O_69" "/O_68" "/O_67" "/O_66" "/O_74"
+    "/O_75" "/O_76" "/O_77" "/O_78" "/O_79" "/O_80" "/sheet5BEA168E/IO_2_3" "/O_73"
+    "/O_81" "/sheet5BEA168E/IO_3_4" "/O_88" "/O_87" "/O_86" "/O_85" "/O_84" "/O_83"
+    "/O_82" "/O_90" "/O_91" "/O_92" "/O_93" "/O_94" "/O_95" "/O_96"
+    "/sheet5BEA168E/IO_4_5" "/O_89" "/O_97" "/sheet5BEA168E/IO_5_6" "/O_104" "/O_103" "/O_102" "/O_101"
+    "/O_100" "/O_99" "/O_98" "/O_106" "/O_107" "/O_108" "/O_109" "/O_110"
+    "/O_111" "/O_112" "/sheet5BEA168E/IO_6_7" "/O_105" "/O_113" "/sheet5BEA168E/IO_7_8" "/O_120" "/O_119"
+    "/O_118" "/O_117" "/O_116" "/O_115" "/O_114" "/O_122" "/O_123" "/O_124"
+    "/O_125" "/O_126" "/O_127" "/O_128" "/SER_2_3" "/O_121" "/O_129" "/sheet5BEA16DC/IO_1_2"
+    "/O_136" "/O_135" "/O_134" "/O_133" "/O_132" "/O_131" "/O_130" "/O_138"
+    "/O_139" "/O_140" "/O_141" "/O_142" "/O_143" "/O_144" "/sheet5BEA16DC/IO_2_3" "/O_137"
+    "/O_145" "/sheet5BEA16DC/IO_3_4" "/O_152" "/O_151" "/O_150" "/O_149" "/O_148" "/O_147"
+    "/O_146" "/O_154" "/O_155" "/O_156" "/O_157" "/O_158" "/O_159" "/O_160"
+    "/sheet5BEA16DC/IO_4_5" "/O_153" "/O_161" "/sheet5BEA16DC/IO_5_6" "/O_168" "/O_167" "/O_166" "/O_165"
+    "/O_164" "/O_163" "/O_162" "/O_170" "/O_171" "/O_172" "/O_173" "/O_174"
+    "/O_175" "/O_176" "/sheet5BEA16DC/IO_6_7" "/O_169" "/O_177" "/sheet5BEA16DC/IO_7_8" "/O_184" "/O_183"
+    "/O_182" "/O_181" "/O_180" "/O_179" "/O_178" "/O_186" "/O_187" "/O_188"
+    "/O_189" "/O_190" "/O_191" "/O_192" "/O_185"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer F.Cu In1.Cu In2.Cu B.Cu)
+    )
+  )
+)
